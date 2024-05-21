@@ -19,6 +19,6 @@ bot = TelegramClient('bot', api_id, api_hash).start(bot_token=bot_token)
 client = MongoClient(db_url, tls=True)
 data = Collection(client[database_name], 'ConfigDB').find_one({"_id":"GogoAnime"})
 
-gogo = Gogo[ gogoanime_token=data["gogoanime"],
+gogo = Gogo[( gogoanime_token=data["gogoanime"],
         auth_token=data["auth"],
-        host=data["url"] ]
+        host=data["url"]) ]
