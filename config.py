@@ -22,5 +22,4 @@ data = Collection(client[database_name], 'ConfigDB').find_one({"_id":"GogoAnime"
 gogo = Gogo[
         gogoanime_token=data("gogoanime"),
         auth_token=data("auth"),
-        host=data("url")
-]
+        host=data("url") ]
